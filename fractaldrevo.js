@@ -1,12 +1,15 @@
 let a = 200;
+var slider;
 
 function setup(){
     createCanvas(800,800);
-    background(0);
-    frameRate(20);
+    
+    slider = createSlider(0, TWO_PI, QUARTER_PI, 0.01);
+
 }
 
 function draw(){
+    background(0);
     translate(400,800);
     stroke(255);
     strokeWeight(3);
@@ -20,12 +23,12 @@ function draw2(lenght){
     if(lenght>4)
     {
     push();
-    rotate(QUARTER_PI*1.2);
-    draw2(lenght * 0.7);
+    rotate(slider.value());
+    draw2(lenght * 0.66);
     pop();
     push();
-    rotate(-(QUARTER_PI*1.2));
-    draw2(lenght * 0.7);
+    rotate(-(slider.value()));
+    draw2(lenght * 0.66);
     pop();
     }
     
