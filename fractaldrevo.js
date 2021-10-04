@@ -2,18 +2,18 @@ let a = 200;
 var slider;
 
 function setup(){
-    createCanvas(800,800);
+    createCanvas(windowWidth,windowHeight);
     
-    slider = createSlider(0, TWO_PI, QUARTER_PI, 0.01);
+    slider = createSlider(0, TWO_PI, QUARTER_PI, 0.0001);
 
 }
 
 function draw(){
     background(0);
-    translate(400,800);
+    translate(windowWidth/2,windowHeight);
     stroke(255);
     strokeWeight(3);
-    draw2(a);
+    draw2(windowHeight/4);
 }
 
 function draw2(lenght){
