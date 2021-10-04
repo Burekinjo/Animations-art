@@ -20,7 +20,7 @@ function draw2(lenght){
     if(lenght>4)
     {
     push();
-    rotate(QUARTER_PI*1.1);
+    rotate(QUARTER_PI*1.3);
     draw2(lenght * 0.66);
     pop();
     push();
