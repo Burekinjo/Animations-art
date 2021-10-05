@@ -14,7 +14,7 @@ function setup() {
   
     rotate(radians(frameCount*125));
   
-    rect(0, 0, 100, 800); 
+    ellipse(0, 0, 100, 800); 
 
     stroke (101,209,63,255);
     fill(255, 0);
@@ -22,21 +22,23 @@ function setup() {
     rotate(radians(frameCount*100));
   
 
-    rect(0, 0, 100, 800); 
+    ellipse(0, 0, 100, 800); 
 
     stroke (228,203,181,255);
     fill(255, 0);
   
     rotate(radians(frameCount*150));
   
-    rect(0, 0, 100, 800); 
+    ellipse(0, 0, 100, 800); 
 
     stroke (170,209,126,255);
     fill(255, 0);
   
     rotate(radians(frameCount*170));
   
-    rect(0, 0, 100, 800);
+    ellipse(0, 0, 100, 800);
+
+    
 
     
   }
